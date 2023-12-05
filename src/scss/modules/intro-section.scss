@@ -1,0 +1,79 @@
+.intro-section {
+  background-color: #000;
+  block-size: 56.25vw;
+  color: #fff;
+  font-size: clamp(20px, 2.5vw, 60px);
+  inline-size: 100%;
+  position: relative;
+
+  .animated-span {
+    opacity: 0;
+  }
+
+  span {
+    display: block;
+  }
+
+  .container {
+    align-items: center;
+    block-size: 100%;
+    color: #c7bfa9;
+    display: flex;
+    inline-size: 100%;
+    inset-block-start: 0;
+    inset-inline-end: 0;
+    justify-content: space-between;
+    max-block-size: 59.0277777778vw;
+    padding-block: 6.25vw;
+    padding-inline: 2.0833333333vw;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .left {
+    block-size: 100%;
+    inline-size: 40.5555555556vw;
+    max-block-size: 39.5833333333vw;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .right {
+    block-size: 100%;
+    inline-size: 46.875vw;
+    max-block-size: 39.5833333333vw;
+    overflow: hidden;
+  }
+
+  .quote {
+    block-size: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    justify-content: space-between;
+  }
+
+  .inner {
+    block-size: 100%;
+    display: block;
+    opacity: 0;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .image {
+    overflow: hidden;
+  }
+
+  img {
+    block-size: 100%;
+    object-fit: cover;
+  }
+
+  .image {
+    block-size: 100%;
+    inset-block: 0;
+    min-inline-size: 100%;
+    position: absolute;
+  }
+}
