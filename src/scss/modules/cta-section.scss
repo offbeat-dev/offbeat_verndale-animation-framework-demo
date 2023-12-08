@@ -1,0 +1,128 @@
+@use "../core/breakpoints";
+
+.cta-section {
+  background-color: #ffb800;
+  color: #000;
+  padding-block: 20px;
+
+  .intro-text {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    padding-block: 6.25vw 4.1666666667vw;
+
+    .left {
+      block-size: 100%;
+      font-size: clamp(14px, 3.5vw, 60px);
+      font-weight: bold;
+      inline-size: 40.5555555556vw;
+      line-height: 130%;
+      max-block-size: 39.5833333333vw;
+      overflow: hidden;
+      position: relative;
+      white-space: nowrap;
+    }
+
+    .right {
+      block-size: 100%;
+      flex: 0 1 30.5555555556vw;
+      font-size: 1.3888888889vw;
+      inline-size: 46.875vw;
+      line-height: 1.4;
+      max-block-size: 39.5833333333vw;
+      overflow: hidden;
+    }
+  }
+
+  article {
+    border: 1px solid #000;
+    border-block-end: 0;
+    border-inline: 0;
+    padding: 50px;
+
+    &:nth-child(2n + 1) {
+      border-inline-end: 0;
+      padding-inline-start: 0;
+    }
+
+    &:nth-child(2n) {
+      border: 1px solid #000;
+      border-block-end: 0;
+      border-inline-end: 0;
+      padding-inline-end: 0;
+    }
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    @include breakpoints.mq(tabletLandscape) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .project-tile {
+    block-size: 50vw;
+    position: relative;
+
+    @include breakpoints.mq(tabletLandscape) {
+      block-size: 33.3333333333vw;
+    }
+
+    .badge {
+      inset-block-start: 1vw;
+      inset-inline-start: 1vw;
+      position: absolute;
+      z-index: 100;
+    }
+
+    .arrow-icon {
+      block-size: 5.5555555556vw;
+      border: 2px solid #ffb800;
+      color: #ffb800;
+      inline-size: 5.5555555556vw;
+      inset-block-end: 1vw;
+      inset-inline-end: 1vw;
+      position: absolute;
+      z-index: 100;
+    }
+  }
+
+  .images {
+    background-color: #000;
+    block-size: 100%;
+    cursor: pointer;
+    inline-size: 100%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+
+    .image {
+      inset: 0;
+      position: absolute;
+    }
+
+    img {
+      display: block;
+      filter: brightness(0.5);
+      min-block-size: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .article-info {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    padding-block: 25px;
+
+    .left {
+      inline-size: 50%;
+    }
+
+    .right {
+      inline-size: 40%;
+    }
+  }
+}

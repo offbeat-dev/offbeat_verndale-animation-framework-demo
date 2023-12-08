@@ -1,0 +1,79 @@
+<article class="project">
+  <fade-in>
+    <div class="project-tile">
+      <trigger-element target="{{id}}" class="badge" translate-y="0, 0.75vw" event="hover">
+        article
+      </trigger-element>
+
+      <div class="arrow-icon">
+        <trigger-element target="{{id}}" translate-x="0, 0.5vw" event="hover">
+          <svg
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            class="-icon -icons ui-fragments-svg"
+          >
+            <path
+              d="M4.16669 10.0001H15"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="square"
+            ></path>
+            <path
+              d="M10 4.16687L15.8333 10.0002L10 15.8335"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="square"
+            ></path>
+          </svg>
+        </trigger-element>
+      </div>
+
+      <div class="images" id="{{id}}">
+        <trigger-element
+          class="image"
+          target="{{id}}"
+          opacity="1, 0"
+          scale="1.1, 1"
+          event="hover"
+          duration="1.1"
+        >
+          <img src="/images/samples/27.jpg" alt="Ville-Marie" />
+        </trigger-element>
+
+        <trigger-element
+          class="image"
+          target="self"
+          opacity="0, 1"
+          scale="1, 1.1"
+          event="hover"
+          duration="1.1"
+        >
+          <img src="/images/samples/26.jpg" alt="Ville-Marie" />
+        </trigger-element>
+      </div>
+    </div>
+  </fade-in-up>
+
+  <div class="article-info">
+    <div class="left">
+      <fade-in-up bottom="20px">
+        <h3>
+          Ville-Marie
+        </h3>
+        <p class="caption">
+          Montréal
+        </p>
+      </fade-in-up>
+    </div>
+
+    <div class="right">
+      <fade-in-up bottom="20px">
+        <p>
+          Live in the heart of the city, in a complex that reflects your life. A place to grow fruit and vegetables, and share great books with friends. This is where everything is close to home.
+        </p>
+      </fade-in-up>
+    </div>
+  </div>
+</article>
