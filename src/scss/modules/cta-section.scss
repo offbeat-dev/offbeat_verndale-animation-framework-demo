@@ -35,20 +35,13 @@
   }
 
   article {
-    border: 1px solid #000;
-    border-block-end: 0;
-    border-inline: 0;
     padding: 50px;
 
     &:nth-child(2n + 1) {
-      border-inline-end: 0;
       padding-inline-start: 0;
     }
 
     &:nth-child(2n) {
-      border: 1px solid #000;
-      border-block-end: 0;
-      border-inline-end: 0;
       padding-inline-end: 0;
     }
   }

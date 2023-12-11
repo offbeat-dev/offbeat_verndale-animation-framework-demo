@@ -4,16 +4,84 @@
       <div class="container">
         <div class="header-logo__container" id="logo-animation-trigger">
           <fade-in>
-            <trigger-element target="logo-animation-trigger" translate-y="0,-50%" event="hover">
-              <span>
-                VERNDALE
-              </span>
-              <span>
-                VERNDALE
-              </span>
+            <trigger-element
+              target="logo-animation-trigger"
+              translate-y="0,-50%"
+              event="hover"
+              duration="0.5"
+            >
+              <a href="www.verndale.com">
+                <span>
+                  VERNDALE
+                </span>
+                <span>
+                  VERNDALE
+                </span>
+              </a>
             </trigger-element>
           </fade-in>
         </div>
+        <nav class="header__navigation">
+          <button class="header__menu-trigger" id="menu-button-1">
+            <trigger-element
+              class="header__menu-trigger-inner"
+              target="menu-button-1"
+              event="click"
+              translate-y="0, -50%"
+            >
+              <span>
+                MENU +
+              </span>
+              <span>
+                MENU -
+              </span>
+            </trigger-element>
+          </button>
+        </nav>
+        <trigger-element
+          class="header__overlay-menu"
+          target="menu-button-1"
+          event="click"
+          translate-y="-100%, 0"
+        >
+          <div class="header__overlay-menu-innner">
+            <ul class="texts">
+              <li class="item-projects" style="">
+                <a href="/projets/ville-marie" class="">
+                  <span class="h2">
+                    Ville-Marie
+                  </span>
+
+                  <span>
+                    Montréal
+                  </span>
+                </a>
+              </li>
+              <li class="item-projects" style="">
+                <a href="/projets/manoir-des-trembles" class="">
+                  <span class="h2">
+                    Manoir-des-Trembles
+                  </span>
+
+                  <span>
+                    Gatineau
+                  </span>
+                </a>
+              </li>
+              <li class="item-projects" style="">
+                <a href="/projets/grace-dart" class="">
+                  <span class="h2">
+                    Grace Dart
+                  </span>
+
+                  <span>
+                    Montréal
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </trigger-element>
       </div>
     </div>
   </animated-element>
