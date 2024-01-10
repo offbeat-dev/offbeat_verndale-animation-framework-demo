@@ -3,7 +3,7 @@
     <div class="header-container">
       <div class="container">
         <div class="header-logo__container" id="logo-animation-trigger">
-          <fade-in>
+          <fade-in duration="5">
             <trigger-element
               target="logo-animation-trigger"
               translate-y="0,-50%"
@@ -44,41 +44,29 @@
           event="click"
           translate-y="-100%, 0"
         >
-          <div class="header__overlay-menu-innner">
+          <div class="header__overlay-menu-inner container">
             <ul class="texts">
-              <li class="item-projects" style="">
-                <a href="/projets/ville-marie" class="">
-                  <span class="h2">
-                    Ville-Marie
-                  </span>
-
-                  <span>
-                    Montréal
-                  </span>
-                </a>
-              </li>
-              <li class="item-projects" style="">
-                <a href="/projets/manoir-des-trembles" class="">
-                  <span class="h2">
-                    Manoir-des-Trembles
-                  </span>
-
-                  <span>
-                    Gatineau
-                  </span>
-                </a>
-              </li>
-              <li class="item-projects" style="">
-                <a href="/projets/grace-dart" class="">
-                  <span class="h2">
-                    Grace Dart
-                  </span>
-
-                  <span>
-                    Montréal
-                  </span>
-                </a>
-              </li>
+              <fade-in>
+                <li class="item-projects" style="">
+                  <a href="/projets/ville-marie" class="">
+                    Project 1
+                  </a>
+                </li>
+              </fade-in>
+              <fade-in>
+                <li class="item-projects" style="">
+                  <a href="/projets/ville-marie" class="">
+                    Project 2
+                  </a>
+                </li>
+              </fade-in>
+              <fade-in>
+                <li class="item-projects" style="">
+                  <a href="/projets/ville-marie" class="">
+                    Project 3
+                  </a>
+                </li>
+              </fade-in>
             </ul>
           </div>
         </trigger-element>

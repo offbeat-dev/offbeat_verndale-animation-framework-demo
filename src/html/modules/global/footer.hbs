@@ -1,4 +1,4 @@
-<footer>
+{{!-- <footer>
   <div class="container">
     <div class="left">
       <fade-in-up bottom="20px">
@@ -113,24 +113,32 @@
       </animated-timeline>
     </div>
   </div>
-</footer>
+</footer> --}}
 
-{{!-- <footer>
+<footer>
   <div class="container">
     <div class="left">
+      <fade-in-up bottom="20px" duration="0.75">
       <h2>
         Get updates on new releases
       </h2>
-      <div class="footer-scrub-decorator"></div>
+      </fade-in-up>
+      <animated-element class="footer-scrub-decorator" scrub scale-x="0,1" star-offset="end end" end-offset="end 75%"></animated-element>
     </div>
     <div class="right">
+              <trigger-element class="footer__contact-button-trigger" target="self" event="hover" scale="1, 1.1">
+
       <button class="footer__contact-button">
-        <span class="footer__button-background"></span>
-        <span class="footer__button-content">
+
+        <animated-element class="footer__button-background" scale-x="0,1"></animated-element>
+        <blur-in class="footer__button-content">
           Contact Us
-        </span>
+        </blur-in>
       </button>
-      <ul class="ui-elements-socials">
+              </trigger-element>
+
+      <animated-timeline class="ui-elements-socials">
+        <fade-in-up at="0.75">
         <li>
           <a
             href="https://www.facebook.com/Mellem-100667885090761"
@@ -152,6 +160,8 @@
             </svg>
           </a>
         </li>
+        </fade-in-up>
+        <fade-in-up at="1.5">
         <li>
           <a
             href="https://www.instagram.com/mellem_vivre/"
@@ -175,6 +185,8 @@
             </svg>
           </a>
         </li>
+        </fade-in-up>
+        <fade-in-up at="2.25">
         <li>
           <a
             href="https://www.linkedin.com/showcase/mellem-vivre/"
@@ -198,6 +210,8 @@
             </svg>
           </a>
         </li>
+        </fade-in-up>
+         <fade-in-up at="3">
         <li>
           <a
             href="https://www.youtube.com/@mellem_vivre"
@@ -221,10 +235,11 @@
             </svg>
           </a>
         </li>
-      </ul>
+        </fade-in-up>
+      </animated-timeline>
     </div>
   </div>
-</footer> --}}
+</footer>
 
 <!-- JavaScript -->
 {{>scripts}}

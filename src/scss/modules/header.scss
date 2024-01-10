@@ -20,6 +20,25 @@ header {
     padding-inline: 10px;
   }
 
+  .item-projects {
+    a {
+      color: #fff;
+      font-size: clamp(20px, 2vw, 35px);
+      font-weight: bold;
+      text-decoration: none;
+    }
+  }
+
+  .header__overlay-menu-inner {
+    padding-block: 100px;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+  }
+
   .header__menu-trigger-inner {
     display: flex;
     flex-direction: column;
